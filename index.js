@@ -14,7 +14,7 @@ destructivelyUpdateObjectWithKeyAndValue(recipes, 'anothertypeof', 'anotherrecip
 var recipes = {typeof: 'recipe'}
 function deleteFromObjectByKey(object, key){
   const newObject = Object.assign({}, object)
-  delete newObject.key
+  delete newObject[key]
   return newObject
 }
 deleteFromObjectByKey(recipes, 'typeof')
